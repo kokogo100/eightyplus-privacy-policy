@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EightyPlus Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f8fb;
+        --panel: #ffffff;
+        --text: #17201c;
+        --muted: #5f6e68;
+        --line: #d9e2dd;
+        --accent: #2f7d67;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101412;
+          --panel: #18201d;
+          --text: #eef6f2;
+          --muted: #a8b7b1;
+          --line: #2c3934;
+          --accent: #8dcdb9;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0;
+      }
+
+      article {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: clamp(24px, 5vw, 48px);
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(32px, 6vw, 48px);
+      }
+
+      h2 {
+        margin: 34px 0 10px;
+        font-size: 20px;
+      }
+
+      p,
+      ul {
+        margin: 0 0 14px;
+      }
+
+      ul {
+        padding-left: 24px;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>EightyPlus Privacy Policy</h1>
+        <p class="updated">Last updated: May 1, 2026</p>
+
+        <p>
+          EightyPlus is a Chrome Extension that helps users read news briefings,
+          save selected news cards, and ask AI-assisted questions about selected
+          news items. This Privacy Policy explains what data the extension stores,
+          what data may be sent to third-party services, and how users control
+          that data.
+        </p>
+
+        <h2>Data Stored Locally</h2>
+        <p>
+          EightyPlus stores the following data locally in the user's browser
+          through Chrome extension storage:
+        </p>
+        <ul>
+          <li>Extension settings such as theme, language, and selected AI provider.</li>
+          <li>User-provided API keys for search or AI providers.</li>
+          <li>Saved news cards, saved groups, and user-written notes attached to saved cards.</li>
+          <li>Current chat context and chat messages used inside the extension panel.</li>
+        </ul>
+        <p>
+          Users may also export chat files or saved card JSON files. Exported files
+          are saved only where the user chooses on their own device.
+        </p>
+
+        <h2>Data Sent to Third-Party Services</h2>
+        <p>
+          EightyPlus sends data to third-party services only when needed for a
+          user-requested feature. Depending on the user's settings and actions,
+          this may include:
+        </p>
+        <ul>
+          <li>Briefing and news requests to the configured EightyPlus news backend.</li>
+          <li>Search queries to Tavily or DuckDuckGo fallback search.</li>
+          <li>News titles, summaries, prompts, and chat messages to the AI provider selected by the user.</li>
+          <li>Subscription or billing requests to the configured billing provider if paid access is enabled.</li>
+        </ul>
+        <p>
+          Third-party providers process data according to their own privacy
+          policies. Users should review the privacy policy of any AI, search, or
+          billing provider they choose to use with EightyPlus.
+        </p>
+
+        <h2>API Keys</h2>
+        <p>
+          User-provided API keys are stored locally in Chrome extension storage.
+          EightyPlus uses those keys only to send requests to the corresponding
+          provider selected by the user. EightyPlus does not sell API keys and does
+          not intentionally share them with unrelated services.
+        </p>
+
+        <h2>Browsing History</h2>
+        <p>
+          EightyPlus does not collect full browsing history. When the user opens
+          or saves a news card, the extension may store or use the URL associated
+          with that selected news item so the user can revisit or export it.
+        </p>
+
+        <h2>Payments and Subscriptions</h2>
+        <p>
+          If subscription features are enabled, payment details are processed by
+          the configured payment provider. EightyPlus stores only the subscription
+          or license status needed to unlock paid functionality. EightyPlus does
+          not store full payment card numbers.
+        </p>
+
+        <h2>Data Sharing and Sale</h2>
+        <p>
+          EightyPlus does not sell personal data. Data is shared only as needed to
+          provide user-requested features, comply with legal obligations, protect
+          against abuse, or operate the extension.
+        </p>
+
+        <h2>Retention and Deletion</h2>
+        <p>
+          Data stored in Chrome extension storage remains on the user's device
+          until the user deletes it, clears extension data, or uninstalls the
+          extension. Exported files remain wherever the user saved them and can be
+          deleted by the user at any time.
+        </p>
+
+        <h2>Security</h2>
+        <p>
+          EightyPlus uses Chrome extension storage and HTTPS requests where
+          supported by the provider. No method of storage or transmission is
+          perfectly secure, so users should protect their device and avoid entering
+          API keys they do not want used by the extension.
+        </p>
+
+        <h2>Children</h2>
+        <p>
+          EightyPlus is not directed to children under 13 and is intended for users
+          who can evaluate news, AI output, and investment-related information
+          responsibly.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+          This policy may be updated when EightyPlus features, providers, or data
+          handling practices change. The latest version will be published on this
+          page.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          For privacy questions, contact the developer through the GitHub profile:
+          <a href="https://github.com/kokogo100">https://github.com/kokogo100</a>.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
