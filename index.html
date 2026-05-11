@@ -89,12 +89,13 @@
     <main>
       <article>
         <h1>EightyPlus Privacy Policy</h1>
-        <p class="updated">Last updated: May 1, 2026</p>
+        <p class="updated">Last updated: May 11, 2026</p>
 
         <p>
-          EightyPlus is a Chrome Extension that helps users read news briefings,
-          save selected news cards, and ask AI-assisted questions about selected
-          news items. This Privacy Policy explains what data the extension stores,
+          EightyPlus is a family of Chrome Extensions that helps users read news
+          briefings, observe broker or exchange market data, save selected cards
+          or contracts, and ask AI-assisted questions about selected read-only
+          context. This Privacy Policy explains what data the extension stores,
           what data may be sent to third-party services, and how users control
           that data.
         </p>
@@ -106,9 +107,11 @@
         </p>
         <ul>
           <li>Extension settings such as theme, language, and selected AI provider.</li>
-          <li>User-provided API keys for search or AI providers.</li>
+          <li>User-provided API keys for search, AI, broker, or exchange providers.</li>
           <li>Saved news cards, saved groups, and user-written notes attached to saved cards.</li>
+          <li>Saved broker or exchange watchlists, scanner presets, condition formulas, and recent read-only scan results.</li>
           <li>Current chat context and chat messages used inside the extension panel.</li>
+          <li>Optional read-only account, asset, portfolio, position, or contract snapshots when the user chooses to load them.</li>
         </ul>
         <p>
           Users may also export chat files or saved card JSON files. Exported files
@@ -125,12 +128,14 @@
           <li>Briefing and news requests to the configured EightyPlus news backend.</li>
           <li>Search queries to Tavily or DuckDuckGo fallback search.</li>
           <li>News titles, summaries, prompts, and chat messages to the AI provider selected by the user.</li>
-          <li>Subscription or billing requests to the configured billing provider if paid access is enabled.</li>
+          <li>Selected broker or exchange symbols, market tickers, scanner requests, public market data requests, and optional read-only account snapshot requests to the corresponding broker or exchange API chosen by the user.</li>
+          <li>Subscription or billing requests to the configured billing provider, such as Lemon Squeezy, if paid access is enabled.</li>
         </ul>
         <p>
           Third-party providers process data according to their own privacy
-          policies. Users should review the privacy policy of any AI, search, or
-          billing provider they choose to use with EightyPlus.
+          policies. Users should review the privacy policy of any AI, search,
+          broker, exchange, or billing provider they choose to use with
+          EightyPlus.
         </p>
 
         <h2>API Keys</h2>
@@ -139,6 +144,28 @@
           EightyPlus uses those keys only to send requests to the corresponding
           provider selected by the user. EightyPlus does not sell API keys and does
           not intentionally share them with unrelated services.
+        </p>
+        <p>
+          Broker and exchange API keys are optional unless the user chooses a
+          feature that needs private read-only data. Public market data features
+          may work without broker or exchange API keys where the provider allows
+          public access. API keys and secrets are not included in Chat or Deep
+          Research context unless the user explicitly types them into a prompt.
+        </p>
+
+        <h2>Broker and Exchange Data</h2>
+        <p>
+          Depending on the installed EightyPlus product, the extension may connect
+          to supported providers such as Kraken, Binance, Alpaca, Upbit, or
+          Kalshi. The extension uses these connections for read-only observation,
+          such as public market snapshots, watchlists, scanner results, optional
+          account or position snapshots, and live market updates where available.
+        </p>
+        <p>
+          EightyPlus does not provide order placement, trading execution, account
+          transfers, deposits, withdrawals, or other account-changing actions.
+          Broker and exchange context may be attached to Chat or Deep Research
+          only as read-only background when the user chooses that workflow.
         </p>
 
         <h2>Browsing History</h2>
